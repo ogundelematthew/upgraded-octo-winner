@@ -1,0 +1,244 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.logo h2{
+    color:#FFD700;
+    font-size:32px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+nav ul li a.active{
+    color:#FFD700;
+}
+
+.btn{
+    background:#FFD700;
+    color:#111;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("../images/hero.jpg") center/cover;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#FFD700;
+}
+
+.hero p{
+    margin:20px auto;
+    max-width:700px;
+    font-size:20px;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#FFD700;
+    color:#111;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-btn:hover{
+    background:#fff;
+}
+
+/* Featured Cars */
+.cars{
+    padding:80px 8%;
+}
+
+.cars h2{
+    text-align:center;
+    color:#FFD700;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.car-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.car{
+    background:#1b1b1b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.car:hover{
+    transform:translateY(-10px);
+}
+
+.car img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.car h3{
+    padding:15px;
+}
+
+.car p{
+    padding:0 15px 20px;
+}
+
+.car button{
+    margin:15px;
+    padding:12px 25px;
+    background:#FFD700;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Services */
+.services{
+    padding:80px 8%;
+    background:#151515;
+}
+
+.services h2{
+    text-align:center;
+    color:#FFD700;
+    margin-bottom:40px;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.service-box div{
+    background:#222;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.service-box i{
+    font-size:45px;
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+/* Contact */
+.contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    text-align:center;
+    padding:25px;
+    color:#aaa;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin:20px 0;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+}

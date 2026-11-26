@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Ojay  Auto Car Dealers</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+body{
+    background:#111;
+    color:#fff;
+    font-family:Arial,sans-serif;
+}
+
+.dashboard{
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#1b1b1b;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:#FFD700;
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:20px 0;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#222;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.card h3{
+    color:#FFD700;
+}
+
+button{
+    background:#FFD700;
+    color:#000;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+
+<h2>OJAY BANTY</h2>
+
+<ul>
+<li><a href="#">🏠 Dashboard</a></li>
+<li><a href="#">🚗 Add Car</a></li>
+<li><a href="#">📋 Manage Cars</a></li>
+<li><a href="#">📩 Customer Inquiries</a></li>
+<li><a href="#">📅 Test Drive Bookings</a></li>
+<li><a href="#">⚙ Settings</a></li>
+<li><a href="#">🚪 Logout</a></li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<h1>Welcome, Admin</h1>
+
+<div class="card-container">
+
+<h3>Total Cars</h3>
+<div class="card">
+<p>25</p>
+</div>
+
+<div class="card">
+<h3>Available Cars</h3>
+<p>20</p>
+</div>
+
+<div class="card">
+<h3>Sold Cars</h3>
+<p>15</p>
+</div>
+
+<div class="card">
+<h3>Customer Messages</h3>
+<p>20</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2>Add New Vehicle</h2>
+
+<form>
+
+<input type="text" placeholder="Car Name" required><br><br>
+
+<input type="text" placeholder="Brand" required><br><br>
+
+<input type="number" placeholder="Year" required><br><br>
+
+<input type="text" placeholder="Price" required><br><br>
+
+<select>
+<option>Automatic</option>
+<option>Manual</option>
+</select>
+
+<br><br>
+
+<input type="file">
+
+<br><br>
+
+<button>Add Vehicle</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>

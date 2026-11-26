@@ -1,0 +1,221 @@
+/* =========================================
+   OJAY BANTY AUTO - ABOUT PAGE
+   ========================================= */
+
+:root{
+    --bg:#0d0d0d;
+    --card:#121212;
+    --accent:#d4af37;
+    --muted:#bfbfbf;
+    --max-width:1100px;
+    --gap:24px;
+    --radius:12px;
+    --trans:.25s ease;
+}
+
+*{box-sizing:border-box}
+body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#fff; margin:0}
+
+.about{padding:80px 6%; background:var(--bg); color:#fff}
+
+.container{max-width:var(--max-width);margin:0 auto}
+
+/* About Hero */
+.about-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("WhatsApp%20Image%202026-08-11%20at%2001.17.57.jpeg") center/cover no-repeat;
+}
+
+.about-hero-content {
+    max-width: 850px;
+}
+
+.about-hero h1{font-weight:700}
+
+.service-box,
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.service-box div,
+.why-item,
+.mission-card {
+    background: #121212;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(212,175,55,.08);
+}
+
+.service-box i,
+.why-item i,
+.mission-card i {
+    font-size: 32px;
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.why-item h4 {
+    margin: 8px 0 10px;
+    color: #fff;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(0,0,0,.45);
+}
+
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+/* Buttons */
+.btn{display:inline-block;background:var(--accent);color:#111;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;transition:transform var(--trans)}
+.btn:hover{transform:translateY(-3px)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);margin:30px 0 40px}
+.stat-card{background:var(--card);padding:22px;border-radius:10px;text-align:center;border:1px solid rgba(212,175,55,.06)}
+.stat-card h3{font-size:28px;color:var(--accent);margin:0}
+.stat-card p{color:var(--muted);margin-top:8px}
+
+/* Team */
+.team-section{margin:40px 0}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.team-card{background:var(--card);padding:18px;border-radius:12px;text-align:center;border:1px solid rgba(212,175,55,.06)}
+.team-card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:12px}
+.team-card h4{margin:6px 0 2px}
+.team-card p{color:var(--muted);margin:0;font-size:14px}
+
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    .about-hero h1 {
+        font-size: 32px;
+    }
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .team-grid{grid-template-columns:1fr}
+}
+
+.about-hero h1 {
+    font-size: 58px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 19px;
+    color: #eee;
+}
+
+/* Main About Section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+}
+
+.about-text h2 {
+    font-size: 38px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* Mission & Vision */
+.mission-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.mission-card {
+    background: #181818;
+    padding: 40px;
+    border-radius: 18px;
+    border: 1px solid rgba(212,175,55,.25);
+    transition: .4s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    box-shadow: 0 15px 35px rgba(0,0,0,.45);
+}
+
+.mission-card i {
+    font-size: 45px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.mission-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.mission-card p {
+    color: #bbb;
+    line-height: 1.8;
+}
+
+/* Why Choose Us */
+.why-us {
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 45px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Breadcrumb in header for About page */
+.breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 20px;
+    color: #fff;
+}
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.95;
+}
+.breadcrumb span {
+    color: rgba(255,255,255,0.7);
+}
